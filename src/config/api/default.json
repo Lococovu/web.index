@@ -1,6 +1,6 @@
 {
   "apiURI": {
     "authed": "https://authed.unfull.ml/api",
-    "internal": "https://v1.api.lococovu.me/api"
+    "internal": "https://v2.api.lococovu.me"
   }
 }
