@@ -1,0 +1,19 @@
+<svg width="150.4" height="150.45" xmlns="http://www.w3.org/2000/svg">
+ <defs>
+  <style>.cls-1{fill:#fff;}</style>
+ </defs>
+ <g>
+  <title>background</title>
+  <rect fill="none" id="canvas_background" height="152.45" width="152.4" y="-1" x="-1"/>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <g id="Layer_2">
+   <g id="Layer_1-2">
+    <path id="svg_9" transform="rotate(-60, -59.4198, 74.7645)" d="m-50.73977,156.33445l64.32,0a6.7,6.7 0 0 1 6.7,6.7l0,27.9a0,0 0 0 1 0,0l-98.8,0a2.13,2.13 0 0 1 -2.13,-2.17l0,-2.56a29.91,29.91 0 0 1 29.91,-29.87z" class="cls-1"/>
+    <path id="svg_10" transform="rotate(60, 106.03, -12.6955)" d="m88.33023,45.45446l153.94,0a0,0 0 0 1 0,0l0,27.85a6.7,6.7 0 0 1 -6.7,6.7l-119.45,0a29.91,29.91 0 0 1 -29.91,-29.86l0,-2.56a2.13,2.13 0 0 1 2.13,-2.13l-0.01,0z" class="cls-1"/>
+    <path id="svg_11" d="m137.13023,114.99446l-64.49,0l18.48,32a5.44,5.44 0 0 0 3.63,2.6l19.94,0a24.23,24.23 0 0 0 24.16,-24.16l0,-8.72a1.72,1.72 0 0 0 -1.72,-1.72z" class="cls-1"/>
+   </g>
+  </g>
+ </g>
+</svg>
