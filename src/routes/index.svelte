@@ -19,7 +19,7 @@
 
 <main style="z-index: 1;" class="relative w-full h-screen flex items-center justify-center">
   <!-- Header -->
-  <header class="absolute top-0 h-16 px-8 w-full flex justify-between items-center">
+  <header class="absolute top-0 h-16 mt-6 px-8 w-full flex justify-between items-center">
     <!-- Logotype -->
     <div class="flex items-center">
       <img class="w-6 h-6" src="./logotype/small-white.svg" alt="">
@@ -27,147 +27,29 @@
       <!-- Links -->
       <div class="flex items-center">
         <a class="border-b border-solid border-indigo-400 text-sm text-white mx-4" href="/">Главная</a>
-        <a class="text-xs text-gray-100 mx-4" href="/">Игры</a>
-        <a class="text-xs text-gray-100 mx-4" href="/">Облако</a>
-        <a class="text-xs text-gray-100 mx-4" href="/">Команда</a>
       </div>
     </div>
   </header>
 
   <!-- Text -->
-  <div style="z-index: 0;" class="w-1/3 text-center pb-24">
-    <h1 class="text-4xl text-white">Выберите то, что вам больше нравится</h1>
-    <p class="mt-3 text-xs text-gray-100 opacity-80">У нас не так уж и много выбора... Ну хотя бы не как в Белоруссии))0</p>
-  </div>
+  <div style="z-index: 0;" class="w-1/3 relative text-center">
+    <h1 class="text-4xl text-white">Всё ещё в разработке</h1>
+    <p class="mt-3 text-sm text-gray-100 opacity-80">Этот проект всё ещё находится на глубочайшей стадии разработки. Мы очень сильно стараеммся сделать этот проект как можно быстрее и как можно качественее.<br /><br />Пока что вы можете посетить наш Дискорд-канал. Ну или же можете попытать удачу и поискать что-то в исходном коде ВСЕГО проекта. (Он доступен всем и вся.)</p>
 
-  <!-- Items -->
-  <div style="z-index: 1;" class="absolute px-16 inset-y-0 bottom-0 w-full h-full flex items-end">
-    <!-- Cloud -->
-    <div class="relative w-1/3 px-4 h-1/3 opacity-70">
-      <div class="w-full px-6 h-full bg-gray-100 py-6 rounded-t-md shadow-md">
-        <!-- Logotype -->
-        <div class="flex items-center opacity-85 mb-2">
-          <img class="w-5 h-5" src="./icons/when_rejected.png" alt="">
-          <p class="text-sm text-black ml-1">В разработке</p>
-        </div>
-  
-        <!-- Title -->
-        <h1 class="text-4xl text-black font-medium">Облако</h1>
-        <p class="text-base text-gray-900 opacity-80">Недорого продаём мощности других компаний</p>
-  
-        <!-- Description -->
-      </div>
-    </div>
+    <div class="w-full flex justify-center items-center mt-4">
+      <!-- Discord -->
+      <button class="w-full mr-2 flex items-center justify-center rounded-md bg-indigo-400 h-9">
+        <img src="./icons/Discord-Logo-White.svg" class="w-6 h-6 text-white" alt="">
 
-    <!-- Gaming -->
-    <div class="transition duration-300 ease-in-out relative w-1/3 px-4 { gamingHover ? "h-2/3" : "h-1/3" }">
-      <div on:mouseenter={(e) => gamingHover = true} on:mouseleave={(e) => gamingHover = false} style="z-index: 1;" class="w-full px-6 h-full bg-gray-100 py-6 flex flex-col rounded-t-md shadow-md">
-        <!-- Logotype -->
-        <div class="flex items-center opacity-85 mb-2">
-          <img class="w-5 h-5" src="./icons/video-game.png" alt="">
-          <p class="text-sm text-black ml-1">Скоро запуск!</p>
-        </div>
+        <p class="text-white text-sm ml-2">Discord</p>
+      </button>
 
-        <!-- Title -->
-        <h1 class="text-4xl text-black font-medium">Игры</h1>
-        <p class="text-base text-gray-900 opacity-80">Создаём крутейшие игры и даём их всем вам</p>
-  
-        <!-- Description -->
-        { #if gamingHover }
-          <div in:fade style="overflow: hidden; overflow-y: auto;" class="relative mt-6 w-full flex-grow">
-            <div class="absolute inset-0 w-full h-full">
-              <!-- Small Description -->
-              <div class="w-full">
-                <!-- Title -->
-                <div class="flex items-center">
-                  <!-- Icon -->
-                  <img class="w-4 h-4" src="./icons/inbox-tray.png" alt="">
+      <!-- Github -->
+      <button class="w-full flex items-center justify-center rounded-md bg-input h-9" on:click={(e) => window.location.href = "https://github.com/Lococovu"}>
+        <Icon name="github" attrs={{ class: "w-5 h-5 text-white" }} />
 
-                  <!-- Text -->
-                  <h1 class="ml-1 text-xl text-black font-medium">Вкратце</h1>
-                </div>
-
-                <!-- Text -->
-                <p class="mt-2 text-gray-900 opacity-90">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae nisi cupiditate nulla soluta eveniet provident, tempore delectus! Illum fuga laborum, est esse nemo qui consectetur.</p>
-              </div>
-
-              <!-- Button -->
-              <div class="absolute bottom-0 mt-4 w-full p-2">
-                <button on:click={(e) => {
-                  window.location.href = "https://gaming.lococovu.me";
-                }} style="background-color: #4158D0; background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);" class="w-full rounded-md px-4 h-8 flex items-center justify-center">
-                  <!-- Icon -->
-                  <Icon name="link" attrs={{ width: "1rem", height: "1rem", color: "#fff" }} />
-                  
-                  <!-- Text -->
-                  <Caption classes="ml-1" opacity={false}>Перейти</Caption>
-                </button>
-              </div>
-
-            </div>
-          </div>
-        { /if }
-      </div>
-    </div>
-
-    <!-- Account -->
-    <div class="relative w-1/3 px-4 { accountsHover ? "h-2/3" : "h-1/3" }">
-      <div on:mouseenter={(e) => accountsHover = true} on:mouseleave={(e) => accountsHover = false} class="w-full px-6 h-full bg-gray-100 py-6 flex flex-col rounded-t-md shadow-md">
-        <!-- Logotype -->
-        <div class="flex items-center opacity-85 mb-2">
-          <img class="w-5 h-5" src="./icons/pomhappy.png" alt="">
-          <p class="text-sm text-black ml-1">Обновление дизайна</p>
-        </div>
-  
-        <!-- Title -->
-        <h1 class="text-4xl text-black font-medium">Аккаунты</h1>
-        <p class="text-base text-gray-900 opacity-80">Настройте свои аккаунты имеено так, как надо вам</p>
-  
-        <!-- Description -->
-        { #if accountsHover }
-          <div in:fade style="overflow: hidden; overflow-y: auto;" class="relative mt-6 w-full flex-grow">
-            <div class="absolute inset-0 w-full h-full">
-              <!-- Small Description -->
-              <div class="w-full">
-                <!-- Title -->
-                <div class="flex items-center">
-                  <!-- Icon -->
-                  <img class="w-4 h-4" src="./icons/inbox-tray.png" alt="">
-
-                  <!-- Text -->
-                  <h1 class="ml-1 text-xl text-black font-medium">Вкратце</h1>
-                </div>
-
-                <!-- Text -->
-                <p class="mt-2 text-gray-900 opacity-90">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae nisi cupiditate nulla soluta eveniet provident, tempore delectus! Illum fuga laborum, est esse nemo qui consectetur.</p>
-              </div>
-
-              <!-- Button -->
-              <div class="absolute bottom-0 mt-4 w-full p-2">
-                <button on:click={(e) => {
-                  goto('/authorize');
-                }} style="background-color: #4158D0; background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);" class="w-full rounded-md px-4 h-8 flex items-center justify-center">
-                  <!-- Icon -->
-                  <Icon name="link" attrs={{ width: "1rem", height: "1rem", color: "#fff" }} />
-                  
-                  <!-- Text -->
-                  <Caption classes="ml-1" opacity={false}>Перейти</Caption>
-                </button>
-              </div>
-
-            </div>
-          </div>
-        { /if }
-      </div>
+        <p class="text-white text-sm ml-2">Github</p>
+      </button>
     </div>
   </div>
 </main>
-
-<div class="hidden">
-  <div class="w-1/6"></div>
-  <div class="w-2/6"></div>
-  <div class="w-3/6"></div>
-  <div class="w-4/6"></div>
-  <div class="w-5/6"></div>
-  <div class="w-6/6"></div>
-</div>
